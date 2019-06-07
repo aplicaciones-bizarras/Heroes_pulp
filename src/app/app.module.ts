@@ -7,12 +7,14 @@ import { APP_ROUTING } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CabeceraComponent } from './components/cabecera/cabecera.component';
+import { PieComponent } from './components/pie/pie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CabeceraComponent
+    CabeceraComponent,
+    PieComponent
   ],
   imports: [
     BrowserModule,
