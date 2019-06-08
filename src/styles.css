@@ -1,18 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
-
-body{
-    background-color: black;
-    color: antiquewhite;
-    background-image: url('assets/BAKER_Comics2-1366x911.jpg')
-}
-
-.colorPapel {
-    background-color:  antiquewhite;
-    color: black;
-}
-
-.panelOscuro {
-    background-color: black;
-    color: antiquewhite;
-    width: 100%;
-}
+    /* You can add global styles to this file, and also import other style files */
+    
+    body {
+        background-color: black;
+        color: antiquewhite;
+        background-image: url('assets/fondo2.jpg');
+    }
+    
+    .colorPapel {
+        background-color: antiquewhite;
+        color: black;
+    }
+    
+    .panelOscuro {
+        background-color: black;
+        color: antiquewhite;
+        width: 100%;
+    }
+    
+    .traslucido {}
+    
+    .jumbotron {
+        background: none;
+    }
+    
+    footer {
+        color: white;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
