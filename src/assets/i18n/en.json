@@ -1,4 +1,16 @@
 {
-    "home.intro": "This is a project to publicize and make visible the pulp's heroes, many of them unknown to most people.",
-    "home.title": "Pulp Heroes!"
+    "cabecera": {
+        "home": "Home",
+        "personajes": "Characters",
+        "acercaDe": "About"
+    },
+
+    "home": {
+        "title": "Pulp Heroes!",
+        "intro": "This is a project to publicize and make visible the pulp's heroes, many of them unknown to most people."
+    },
+
+    "pie": {
+        "licencia": "This work is under a "
+    }
 }

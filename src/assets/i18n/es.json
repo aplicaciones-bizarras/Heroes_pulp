@@ -1,4 +1,16 @@
 {
-    "home.intro": "Este es un proyecto para dar a conocer y visibilizar a los héroes del pulp, personajes muchos de ellos ya desconocidos para la mayoría de la gente.",
-    "home.title": "¡Héroes del pulp!"
+    "cabecera": {
+        "home": "Inicio",
+        "personajes": "Personajes",
+        "acercaDe": "Acerca de nosotros"
+    },
+
+    "home": {
+        "title": "¡Héroes del pulp!",
+        "intro": "Este es un proyecto para dar a conocer y visibilizar a los héroes del pulp, personajes muchos de ellos ya desconocidos para la mayoría de la gente."
+    },
+
+    "pie": {
+        "licencia": "Esta obra está bajo una "
+    }
 }

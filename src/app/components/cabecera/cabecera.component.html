@@ -1,5 +1,10 @@
 <header class="bg-dark text-center">
-    <div class="row"><img src="/assets/logo.png" alt="Heroes del pulp">
+
+    <div class="row">
+        <br>
+        <button (click)="useLanguage('en')">en</button>
+        <button (click)="useLanguage('es')">es</button>
+        <img src="/assets/logo.png" alt="Heroes del pulp">
         <!-- </div>
     <div class="row"> -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -9,16 +14,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" [routerLink]="['home']">Home</a>
+                        <a class="nav-link" [routerLink]="['home']">{{ 'cabecera.home' | translate }}</a>
                     </li>
                     <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link disabled">Personajes</a>
+                        <a class="nav-link disabled">{{ 'cabecera.personajes' | translate }}</a>
                     </li>
                     <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link disabled">Acerca de nosotros</a>
+                        <a class="nav-link disabled">{{ 'cabecera.acercaDe' | translate }}</a>
                     </li>
                 </ul>
             </div>
         </nav>
+
     </div>
+
 </header>
