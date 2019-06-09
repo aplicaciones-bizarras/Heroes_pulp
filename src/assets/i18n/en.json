@@ -1,11 +1,4 @@
-/**
- * Fichero de internacionalización. - Inglés
- */
-
 {
-    "home": {
-        "title": "Pulp Heroes!",
-        "englishLabel": "English",
-        "spanishLabel": "Spanish"
-    }
+    "home.intro": "This is a project to publicize and make visible the pulp's heroes, many of them unknown to most people.",
+    "home.title": "Pulp Heroes!"
 }
