@@ -1,0 +1,11 @@
+/**
+ * Fichero de internacionalización. - Inglés
+ */
+
+{
+    "home": {
+        "title": "Pulp Heroes!",
+        "englishLabel": "English",
+        "spanishLabel": "Spanish"
+    }
+}

@@ -1,0 +1,11 @@
+/**
+ * Fichero de internacionalización. - Español
+ */
+
+{
+    "home": {
+        "title": "¡Heróes del pulp!",
+        "englishLabel": "Inglés",
+        "spanishLabel": "Español"
+    }
+}
