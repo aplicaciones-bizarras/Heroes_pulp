@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class CabeceraComponent  {
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('es');
 }
 
 useLanguage(language: string) {

@@ -1,16 +1,10 @@
 {
-    "cabecera": {
-        "home": "Home",
-        "personajes": "Characters",
-        "acercaDe": "About"
-    },
-
-    "home": {
-        "title": "Pulp Heroes!",
-        "intro": "This is a project to publicize and make visible the pulp's heroes, many of them unknown to most people."
-    },
-
-    "pie": {
-        "licencia": "This work is under a "
-    }
+	"cabecera.acercaDe": "About",
+	"cabecera.home": "Home",
+	"cabecera.personajes": "Characters",
+	"home.intro": "This is a project to publicize and make visible the pulp's heroes, many of them unknown to most people.",
+	"home.title": "Pulp Heroes!",
+	"personajes.titulo": "Characters",
+	"personajes.ver": "More",
+	"pie.licencia": "This work is under a "
 }

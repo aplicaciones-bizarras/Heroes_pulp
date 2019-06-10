@@ -13,13 +13,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CabeceraComponent } from './components/cabecera/cabecera.component';
 import { PieComponent } from './components/pie/pie.component';
+import { PersonajesComponent } from './components/personajes/personajes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CabeceraComponent,
-    PieComponent
+    PieComponent,
+    PersonajesComponent
   ],
   imports: [
     BrowserModule,

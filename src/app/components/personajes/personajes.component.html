@@ -1,0 +1,17 @@
+<h1 class="bg-dark text-center titulo">{{ 'personajes.titulo' | translate }}</h1>
+<hr>
+
+
+<div class="row card-group">
+    <div class="col-2" *ngFor="let personaje of personajes; let i = index">
+        <div class="card animated fadeIn fast">
+            <img [src]="personaje.img" class="card-img-top" [alt]="personaje.nombre">
+            <div class="card-body">
+                <h5 class="card-title">{{ personaje.nombre }}</h5>
+                <p class="card-text">{{ personaje.bio | slice:0:100}}...</p>
+
+                <button (click)="detallePersonaje(i)" type="button" class="btn btn-block">{{ "personajes.ver" | translate }}</button>
+            </div>
+        </div>
+    </div>
+</div>
