@@ -48,7 +48,7 @@ export class PersonajesService {
   ];
 
   constructor() { 
-    this.personajes= this.personajesEN;
+    this.personajes= this.personajesES;
    
   }
 
