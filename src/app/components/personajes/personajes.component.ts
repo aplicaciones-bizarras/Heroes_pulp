@@ -17,7 +17,7 @@ export class PersonajesComponent implements OnInit {
   }
 
   detallePersonaje(idx: number) {
-    this._router.navigate(['/heroe', idx]);
+    this._router.navigate(['/personaje', idx]);
   }
 
 }

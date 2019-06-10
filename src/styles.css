@@ -7,7 +7,6 @@
     
     footer {
         color: white;
-        position: fixed;
         bottom: 0px;
         width: 100%;
     }
@@ -25,4 +24,12 @@
         margin: 10px;
         color: antiquewhite;
         font-weight: bolder
+    }
+    
+    .contenedorDetalle {
+        margin: 10px;
+    }
+    
+    .resaltado {
+        font-weight: bold;
     }

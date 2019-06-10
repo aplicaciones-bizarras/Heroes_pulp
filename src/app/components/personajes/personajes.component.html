@@ -9,8 +9,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ personaje.nombre }}</h5>
                 <p class="card-text">{{ personaje.bio | slice:0:100}}...</p>
-
-                <button (click)="detallePersonaje(i)" type="button" class="btn btn-block">{{ "personajes.ver" | translate }}</button>
+                <button (click)="detallePersonaje(i)" type="button" class="btn btn-block btn-dark">{{ "personajes.ver" | translate }}</button>
             </div>
         </div>
     </div>

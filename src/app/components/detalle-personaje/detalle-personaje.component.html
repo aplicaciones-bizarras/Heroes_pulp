@@ -1,0 +1,19 @@
+<div class="container contenedorDetalle colorPapel">
+    <h2>{{ personaje.nombre | uppercase }}</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img [src]="personaje.img" class="card-img-top" [alt]="personaje.nombre">
+            <p> <span class="resaltado">{{"detalle.fechaCreacion" | translate }} </span> {{personaje.fechaCreacion}} </p>
+            <p> <span class="resaltado">{{"detalle.creador" | translate }} </span>{{personaje.creador}} </p>
+            <p> <span class="resaltado">{{"detalle.primeraAparicion" | translate }} </span> {{personaje.primeraAparicion}} </p>
+
+            <a [routerLink]="['/personajes']" class="btn btn-block btn-dark">{{ "detalle.regresar" | translate}}</a>
+        </div>
+        <div class="col-md-8">
+
+            <p class="resaltado">{{"detalle.bio" | translate }}</p>
+            <p>{{personaje.bio}}</p>
+        </div>
+    </div>
+
+</div>
