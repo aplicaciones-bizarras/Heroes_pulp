@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { version } from '../../../../package.json';
 
 @Component({
   selector: 'app-pie',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class PieComponent  {
 
   anio: number;
+  version: string = version;
 
   constructor() {
     this.anio = new Date().getFullYear();
   }
 
+
 }
+
+
