@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { GlobalesService } from '../../services/globales.service';
 
 @Component({
   selector: 'app-cabecera',
@@ -7,20 +8,14 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class CabeceraComponent  {
 
-  idiomaSeleccionado: string;
-
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private _globales: GlobalesService) {
     translate.setDefaultLang('es');
-    this.idiomaSeleccionado = this.translate.defaultLang;
+    this._globales.setIdioma(this.translate.defaultLang);
 }
 
 useLanguage(language: string) {
   this.translate.use(language);
-  this.idiomaSeleccionado = this.translate.currentLang;
-}
-
-getLanguage() {
-  return this.idiomaSeleccionado;
+  this._globales.setIdioma(this.translate.currentLang);
 }
 
 

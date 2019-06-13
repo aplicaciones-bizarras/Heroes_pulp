@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { a, b } from '@angular/core/src/render3';
-
+import { GlobalesService } from './globales.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonajesService {
+
+  private idioma: string;
 
   private personajes: Personaje[];
 
@@ -47,25 +50,25 @@ export class PersonajesService {
     }
   ];
 
-  constructor() { 
-    this.personajes= this.personajesES;
-   
-  }
+  constructor(private _globales: GlobalesService, private _trans: TranslateService) {  }
 
   
 
   getPersonajes() {
     // Devuelve la lista ordenada por nombre
     // tslint:disable-next-line:no-shadowed-variable
+    console.log(this._trans.currentLang);
+    this.seleccionarLista(this._globales.getIdioma());
     return this.personajes.sort((a, b) => (a.nombre > b.nombre) ? 1 : ((b.nombre > a.nombre) ? -1 : 0));
 }
 
 getPersonaje(id: string) {
+  this.seleccionarLista(this._globales.getIdioma());
     return this.personajes[id];
 }
 
 buscarHeroe( termino: string) {
-  
+    this.seleccionarLista(this._globales.getIdioma());
     const ARRAYPERSONAJES: Personaje[] = [];
     termino = termino.toLowerCase();
 
@@ -81,6 +84,12 @@ buscarHeroe( termino: string) {
     }
 
     return ARRAYPERSONAJES;
+}
+
+seleccionarLista(idioma: string) {
+  this.personajes = this.personajesES;
+  if (idioma === 'es') { this.personajes = this.personajesES; }
+  if (idioma === 'en') { this.personajes = this.personajesEN; }
 }
 }
 
