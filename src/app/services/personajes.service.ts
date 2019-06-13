@@ -57,7 +57,7 @@ export class PersonajesService {
   getPersonajes() {
     // Devuelve la lista ordenada por nombre
     // tslint:disable-next-line:no-shadowed-variable
-    console.log(this._trans.currentLang);
+    console.log('idioma: ' + this._trans.currentLang);
     this.seleccionarLista(this._globales.getIdioma());
     return this.personajes.sort((a, b) => (a.nombre > b.nombre) ? 1 : ((b.nombre > a.nombre) ? -1 : 0));
 }
