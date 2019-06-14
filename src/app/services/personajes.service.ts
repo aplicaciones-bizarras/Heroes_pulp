@@ -47,12 +47,11 @@ export class PersonajesService {
     }
   ];
 
-  constructor() { 
-    this.personajes= this.personajesES;
-   
+  constructor() {
+    this.personajes = this.personajesES;
   }
 
-  
+
 
   getPersonajes() {
     // Devuelve la lista ordenada por nombre
@@ -65,7 +64,6 @@ getPersonaje(id: string) {
 }
 
 buscarHeroe( termino: string) {
-  
     const ARRAYPERSONAJES: Personaje[] = [];
     termino = termino.toLowerCase();
 
