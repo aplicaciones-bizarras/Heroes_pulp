@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { a, b } from '@angular/core/src/render3';
+import { Personaje } from '../modelo/personaje';
 
 
 @Injectable({
@@ -82,12 +83,4 @@ buscarHeroe( termino: string) {
 }
 }
 
-export interface Personaje {
-  nombre: string;
-  fechaCreacion: string;
-  creador: string;
-  primeraAparicion: string;
-  bio: string;
-  img: string;
-  idx?: number;
-}
+

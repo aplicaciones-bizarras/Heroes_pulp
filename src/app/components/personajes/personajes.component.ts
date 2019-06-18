@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonajesService, Personaje } from '../../services/personajes.service';
+import { PersonajesService } from '../../services/personajes.service';
 import { Router } from '@angular/router';
+import { Personaje } from 'src/app/modelo/personaje';
 
 @Component({
   selector: 'app-personajes',
